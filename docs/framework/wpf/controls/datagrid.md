@@ -18,9 +18,9 @@ ms.lasthandoff: 04/20/2020
 ms.locfileid: "81646121"
 ---
 # <a name="datagrid"></a>DataGrid
-El <xref:System.Windows.Controls.DataGrid> control le permite mostrar y editar datos de muchos orígenes diferentes, como desde una base de datos SQL, una consulta LINQ o cualquier otro origen de datos enlazable. Para más información, consulte [Binding Sources Overview](../data/binding-sources-overview.md) (Introducción a los orígenes de enlace).  
+El control <xref:System.Windows.Controls.DataGrid> le permite mostrar y editar datos de muchos orígenes diferentes, como desde una base de datos SQL, una consulta LINQ o cualquier otro origen de datos enlazable. Para más información, consulte [Binding Sources Overview](../data/binding-sources-overview.md) (Introducción a los orígenes de enlace).  
   
- Las columnas pueden mostrar texto, <xref:System.Windows.Controls.ComboBox>controles, como un , o cualquier otro contenido de WPFWPF, como imágenes, botones o cualquier contenido contenido en una plantilla. Puede utilizar <xref:System.Windows.Controls.DataGridTemplateColumn> a para mostrar los datos definidos en una plantilla. En la tabla siguiente se enumeran los tipos de columna que se proporcionan de forma predeterminada.  
+ Las columnas pueden mostrar texto, controles, como un <xref:System.Windows.Controls.ComboBox> , o cualquier otro contenido de WPF, como imágenes, botones o cualquier contenido contenido en una plantilla. Puede utilizar <xref:System.Windows.Controls.DataGridTemplateColumn> para mostrar los datos definidos en una plantilla. En la tabla siguiente se enumeran los tipos de columna que se proporcionan de forma predeterminada.  
   
 |Tipo de columna generado|Tipo de datos|  
 |---------------------------|---------------|  
@@ -29,9 +29,9 @@ El <xref:System.Windows.Controls.DataGrid> control le permite mostrar y editar d
 |<xref:System.Windows.Controls.DataGridComboBoxColumn>|<xref:System.Enum>|  
 |<xref:System.Windows.Controls.DataGridHyperlinkColumn>|<xref:System.Uri>|  
   
- <xref:System.Windows.Controls.DataGrid>se puede personalizar en apariencia, como fuente de celda, color y tamaño. <xref:System.Windows.Controls.DataGrid>admite todas las funciones de estilo y plantillas de otros controles WPFWPF. <xref:System.Windows.Controls.DataGrid>también incluye comportamientos predeterminados y personalizables para editar, ordenar y validar.  
+ <xref:System.Windows.Controls.DataGrid> se puede personalizar en apariencia, como fuente de celda, color y tamaño. <xref:System.Windows.Controls.DataGrid> admite todas las funciones de estilo y plantillas de otros controles WPF. <xref:System.Windows.Controls.DataGrid> también incluye comportamientos predeterminados y personalizables para editar, ordenar y validar.  
   
- En la tabla siguiente se <xref:System.Windows.Controls.DataGrid> enumeran algunas de las tareas comunes y cómo realizarlas. Al ver la API relacionada, puede encontrar más información y código de ejemplo.  
+ En la tabla siguiente se enumeran algunas de las tareas comunes para el <xref:System.Windows.Controls.DataGrid> y cómo realizarlas. Al ver la API relacionada, puede encontrar más información y código de ejemplo.  
   
 |Escenario|Enfoque|  
 |--------------|--------------|  
