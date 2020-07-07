@@ -13,11 +13,11 @@ ms.lasthandoff: 03/12/2020
 ms.locfileid: "79186643"
 ---
 # <a name="textbox-overview"></a>Información general sobre TextBox
-La <xref:System.Windows.Controls.TextBox> clase le permite mostrar o editar texto sin formato. Un uso común <xref:System.Windows.Controls.TextBox> de a es editar texto sin formato en un formulario. Por ejemplo, un formulario que pide el nombre del <xref:System.Windows.Controls.TextBox> usuario, el número de teléfono, etc. usaría controles para la entrada de texto. En este tema <xref:System.Windows.Controls.TextBox> se presenta la clase y se [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] proporcionan ejemplos de cómo usarla tanto en C.  
+La clase <xref:System.Windows.Controls.TextBox> le permite mostrar o editar texto sin formato. Un uso común <xref:System.Windows.Controls.TextBox> es de editar texto sin formato en un formulario. Por ejemplo, un formulario que pide el nombre del usuario, el número de teléfono, etc usaría controles <xref:System.Windows.Controls.TextBox> para la entrada de texto. En este tema  se presenta la clase <xref:System.Windows.Controls.TextBox> y se proporcionan ejemplos de cómo usarla tanto en  [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] y C# .  
 
 <a name="textbox_or_richtextbox"></a>
 ## <a name="textbox-or-richtextbox"></a>¿TextBox o RichTextBox?  
- Tanto <xref:System.Windows.Controls.TextBox> <xref:System.Windows.Controls.RichTextBox> permiten a los usuarios introducir texto, pero los dos controles se usan para escenarios diferentes. A <xref:System.Windows.Controls.TextBox> requiere menos recursos <xref:System.Windows.Controls.RichTextBox> del sistema y, por lo que es ideal cuando solo se necesita editar texto sin formato (es decir, el uso en un formulario). A <xref:System.Windows.Controls.RichTextBox> es una mejor opción cuando es necesario que el usuario edite texto con formato, imágenes, tablas u otro contenido compatible. Por ejemplo, editar un documento, artículo o blog que requiera formato, <xref:System.Windows.Controls.RichTextBox>imágenes, etc. se realiza mejor mediante un archivo . La siguiente tabla resume las <xref:System.Windows.Controls.TextBox> <xref:System.Windows.Controls.TextBox>características principales de y .  
+ Tanto <xref:System.Windows.Controls.TextBox> y <xref:System.Windows.Controls.RichTextBox> permiten a los usuarios introducir texto, pero los dos controles se usan para escenarios diferentes. A <xref:System.Windows.Controls.TextBox> requiere menos recursos del sistema que <xref:System.Windows.Controls.RichTextBox> y, por lo que es ideal cuando solo se necesita editar texto sin formato (es decir, el uso en un formulario). Un <xref:System.Windows.Controls.RichTextBox> es una mejor opción cuando es necesario que el usuario edite texto con formato, imágenes, tablas u otro contenido compatible. Por ejemplo, editar un documento, artículo o blog que requiera formato,     imágenes, etc se realiza mejor mediante un <xref:System.Windows.Controls.RichTextBox>. La siguiente tabla resume las características principales de <xref:System.Windows.Controls.TextBox> y  <xref:System.Windows.Controls.RichTextBox> .  
   
 |Control|Revisión ortográfica en tiempo real|Menú contextual|Formato de <xref:System.Windows.Documents.EditingCommands.ToggleBold%2A> comandos como (Ctr+B)|<xref:System.Windows.Documents.FlowDocument>contenido como imágenes, párrafos, tablas, etc.|  
 |-------------|------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
@@ -27,7 +27,7 @@ La <xref:System.Windows.Controls.TextBox> clase le permite mostrar o editar text
 > [!NOTE]
 > Aunque <xref:System.Windows.Controls.TextBox> no admite el formato <xref:System.Windows.Documents.EditingCommands.ToggleBold%2A> de comandos de edición relacionados como (Ctr+B), muchos comandos básicos son compatibles con ambos controles como <xref:System.Windows.Documents.EditingCommands.MoveToLineEnd%2A>. Consulte <xref:System.Windows.Documents.EditingCommands> para obtener más información.  
   
- Las características <xref:System.Windows.Controls.TextBox> admitidas se tratan en las secciones siguientes. Para obtener <xref:System.Windows.Controls.RichTextBox>más información acerca de , vea [Información general sobre RichTextBox](richtextbox-overview.md).  
+ Las características admitidas por  <xref:System.Windows.Controls.TextBox>  se tratan en las secciones siguientes. Para obtener más información acerca de <xref:System.Windows.Controls.RichTextBox>, vea  [Información general sobre RichTextBox](richtextbox-overview.md).  
   
 ### <a name="real-time-spellchecking"></a>Revisión ortográfica en tiempo real  
  Puede habilitar la corrección ortográfica en tiempo real en a <xref:System.Windows.Controls.TextBox> o <xref:System.Windows.Controls.RichTextBox>. Cuando se activa la revisión ortográfica, aparece una línea roja debajo de las palabras con errores de ortografía (consulte la siguiente imagen).  
@@ -37,7 +37,7 @@ La <xref:System.Windows.Controls.TextBox> clase le permite mostrar o editar text
  Consulte [Cómo habilitar el corrector ortográfico en un control de edición de texto](how-to-enable-spell-checking-in-a-text-editing-control.md) para más información sobre cómo activar la revisión ortográfica.  
   
 ### <a name="context-menu"></a>Menú contextual  
- De forma <xref:System.Windows.Controls.TextBox> predeterminada, ambos y <xref:System.Windows.Controls.RichTextBox> tienen un menú contextual que aparece cuando un usuario hace clic con el botón derecho dentro del control. El menú contextual permite al usuario cortar, copiar o pegar (consulte la siguiente imagen).  
+ De forma predeterminada, ambos   <xref:System.Windows.Controls.TextBox>  y  <xref:System.Windows.Controls.RichTextBox> tienen un menú contextual que aparece cuando un usuario hace clic con el botón derecho dentro del control. El menú contextual permite al usuario cortar, copiar o pegar (consulte la siguiente imagen).  
   
  ![TextBox con menú contextual](./media/editing-textbox-with-context-menu.png "Editing_TextBox_with_Context_Menu")  
   
@@ -45,11 +45,11 @@ La <xref:System.Windows.Controls.TextBox> clase le permite mostrar o editar text
   
 <a name="creating_textboxes"></a>
 ## <a name="creating-textboxes"></a>Crear controles TextBox  
- A <xref:System.Windows.Controls.TextBox> puede ser una sola línea de altura o comprender varias líneas. Una sola <xref:System.Windows.Controls.TextBox> línea es mejor para introducir pequeñas cantidades de texto sin formato (es decir, "Nombre", "Número de teléfono", etc. en un formulario). En el ejemplo siguiente se <xref:System.Windows.Controls.TextBox>muestra cómo crear una sola línea.  
+Un <xref:System.Windows.Controls.TextBox> puede ser una sola línea de altura o comprender varias líneas. Un <xref:System.Windows.Controls.TextBox> de una sola línea es mejor para introducir pequeñas cantidades de texto sin formato (es decir, "Nombre", "Número de teléfono", etc. en un formulario). En el ejemplo siguiente se muestra cómo crear un <xref:System.Windows.Controls.TextBox> de una sola línea.
   
  [!code-xaml[TextBoxMiscSnippets_snip#BasicTextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/basictextboxexample.xaml#basictextboxexamplewholepage)]  
   
- También puede crear <xref:System.Windows.Controls.TextBox> un que permita al usuario introducir varias líneas de texto. Por ejemplo, si el formulario solicita un boceto biográfico del <xref:System.Windows.Controls.TextBox> usuario, desearía utilizar un que admita varias líneas de texto. En el ejemplo siguiente [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] se <xref:System.Windows.Controls.TextBox> muestra cómo utilizar para definir un control que se expande automáticamente para dar cabida a varias líneas de texto.  
+ También puede crear un <xref:System.Windows.Controls.TextBox> que permita al usuario introducir varias líneas de texto. Por ejemplo, si el formulario solicita un boceto biográfico del  usuario, desearía utilizar un <xref:System.Windows.Controls.TextBox> que admita varias líneas de texto. En el ejemplo siguiente se muestra cómo utilizar [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]  para definir un control <xref:System.Windows.Controls.TextBox> que se expande automáticamente para dar cabida a varias líneas de texto.  
   
  [!code-xaml[TextBox_MiscCode#_MultilineTextBoxXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml#_multilinetextboxxaml)]  
   
